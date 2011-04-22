@@ -1,0 +1,34 @@
+<div class="footer-container">
+    <div class="footer">
+                <div class="f-right">
+            <img src="http://www.netamplitude.com/skin/frontend/default/modern/images/media/footer_callout.png" class="footer-callout" alt="" />
+            <div class="store-switcher">
+    <label for="select-store">Select Store:</label>
+    <select id="select-store" title="Select Store" onchange="location.href=this.value">
+                        <option value="http://www.netamplitude.com/index.php/?___SID=U&___store=bayada">Bayada Store</option>
+                    <option value="" selected="selected">Main Store</option>
+        </select>
+</div>
+        </div>
+        <div class="f-left">
+                                    <form action="http://www.netamplitude.com/index.php/newsletter/subscriber/new/?___SID=U" method="post" id="newsletter-validate-detail">
+    <div class="form-subscribe">
+        <label for="newsletter">Newsletter Sign-up:</label>
+        <div class="input-box">
+           <input type="text" name="email" id="newsletter" title="Sign up for our newsletter" class="input-text required-entry validate-email" />
+        </div>
+        <button type="submit" title="Submit" class="button"><span><span>Submit</span></span></button>
+    </div>
+</form>
+<script type="text/javascript">
+//<![CDATA[
+    var newsletterSubscriberFormDetail = new VarienForm('newsletter-validate-detail');
+    new Varien.searchForm('newsletter-validate-detail', 'newsletter', 'Enter your email address');
+//]]>
+</script>
+            	    	                <address>&copy; 2011 Merion Publications, Inc.  All Rights Reserved.
+
+</address>
+        </div>
+    </div>
+</div>

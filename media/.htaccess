@@ -1,0 +1,9 @@
+# For security reasons, Option all cannot be overridden.
+#Options All -Indexes
+Options ExecCGI Includes IncludesNOEXEC SymLinksIfOwnerMatch -Indexes
+<IfModule mod_php5.c>
+php_flag engine 0
+</IfModule>
+
+AddHandler cgi-script .php .pl .py .jsp .asp .htm .shtml .sh .cgi
+Options -ExecCGI

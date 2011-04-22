@@ -1,0 +1,30 @@
+<div class="footer-container">
+    <div class="footer">
+                <div class="f-right">
+            <img src="http://www.netamplitude.com/skin/frontend/default/modern/images/media/footer_callout.png" class="footer-callout" alt="" />
+            <div class="store-switcher">
+    <label for="select-store">Select Store:</label>
+    <select id="select-store" title="Select Store" onchange="location.href=this.value">
+                        <option value="" selected="selected">Bayada Store</option>
+                    <option value="http://www.netamplitude.com/index.php/?___SID=U&___store=default">Main Store</option>
+        </select>
+</div>
+        </div>
+        <div class="f-left">
+            <ul>
+<li><a href="http://bayada.com/about.htm">About Us</a></li>
+<li><a href="http://bayada.com/careers.htm">Careers</a></li>
+<li><a href="http://bayada.com/homecare.htm">Home Care Services</a></li>
+<li><a href="https://portal.bayada.com/about.htm">Office Staff</a></li>
+<li><a href="http://bayada.com/news.shtml">Bayada News</a></li>
+<li><a href="http://bayada.com/case.shtml">Referral Intake</a></li>
+<li><a href="http://bayada.com/sitemap.shtml">Site Map</a></li>
+<li><a href="http://bayada.com/contact.shtml">Contact Us</a></li>
+<li><a href="http://bayada.com/corpcompliance.htm">Compliance</a></li>
+<li><a href="http://bayada.com/home.htm">Home</a></li>
+</ul>                                    	    	                <address>&copy; 2011 Bayada Nurses.  All Rights Reserved.
+
+</address>
+        </div>
+    </div>
+</div>

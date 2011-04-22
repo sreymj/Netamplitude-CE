@@ -1,0 +1,14 @@
+<div class="footer-container">
+    <div class="footer">
+        <div class="store-switcher">
+    <label for="select-store">Select Store:</label>
+    <select id="select-store" title="Select Store" onchange="location.href=this.value">
+                        <option value="http://www.netamplitude.com/index.php/?___SID=U&___store=bayada">Bayada Store</option>
+                    <option value="" selected="selected">Main Store</option>
+        </select>
+</div>
+        		        <address>&copy; 2011 Merion Publications, Inc.  All Rights Reserved.
+
+</address>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+<label>One Page Checkout Overview</label>
+<remove name="right"/>
+<remove name="left"/>
+<block type="checkout/onepage_review_info" name="root" output="toHtml" template="checkout/onepage/review/info.phtml">
+   <action method="addItemRender">
+      <type>default</type>
+      <block>checkout/cart_item_renderer</block>
+      <template>checkout/onepage/review/item.phtml</template>
+   </action>
+   <action method="addItemRender">
+      <type>grouped</type>
+      <block>checkout/cart_item_renderer_grouped</block>
+      <template>checkout/onepage/review/item.phtml</template>
+   </action>
+   <action method="addItemRender">
+      <type>configurable</type>
+      <block>checkout/cart_item_renderer_configurable</block>
+      <template>checkout/onepage/review/item.phtml</template>
+   </action>
+   <block type="checkout/cart_totals" name="checkout.onepage.review.info.totals" as="totals" template="checkout/onepage/review/totals.phtml"/>
+   <block type="core/text_list" name="checkout.onepage.review.info.items.before" as="items_before" translate="label">
+      <label>Items Before</label>
+   </block>
+</block>
+<reference name="root">
+   <action method="addItemRender">
+      <type>bundle</type>
+      <block>bundle/checkout_cart_item_renderer</block>
+      <template>checkout/onepage/review/item.phtml</template>
+   </action>
+</reference>
+<reference name="checkout.onepage.review.info.items.before">
+   <block type="centinel/authentication" name="centinel.frame" template="centinel/authentication.phtml">
+      <action method="addRelatedBlock">
+         <blockId>checkout-review-submit</blockId>
+      </action>
+      <action method="addRelatedBlock">
+         <blockId>checkout-review-table-wrapper</blockId>
+      </action>
+      <action method="setAuthenticationStartMode">
+         <mode>instant</mode>
+      </action>
+   </block>
+</reference>
+<reference name="top.links">
+   <action method="addLink" translate="label title" module="customer">
+      <label>Log Out</label>
+      <url helper="customer/getLogoutUrl"/>
+      <title>Log Out</title>
+      <prepare/>
+      <urlParams/>
+      <position>100</position>
+   </action>
+</reference>
+<reference name="right">
+   <block type="sales/reorder_sidebar" name="sale.reorder.sidebar" as="reorder" template="sales/reorder/sidebar.phtml"/>
+</reference>
+<reference name="head">
+   <action method="addItem">
+      <type>js</type>
+      <name>varien/weee.js</name>
+   </action>
+</reference>

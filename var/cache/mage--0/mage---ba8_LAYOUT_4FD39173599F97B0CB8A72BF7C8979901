@@ -1,0 +1,8 @@
+<remove name="right"/>
+<remove name="left"/>
+<block type="checkout/onepage_payment_methods" name="root" output="toHtml" template="checkout/onepage/payment/methods.phtml">
+   <action method="setMethodFormTemplate">
+      <method>purchaseorder</method>
+      <template>payment/form/purchaseorder.phtml</template>
+   </action>
+</block>
